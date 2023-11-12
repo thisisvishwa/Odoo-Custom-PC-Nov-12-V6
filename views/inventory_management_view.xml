@@ -1,0 +1,51 @@
+```xml
+<odoo>
+    <data>
+        <!-- Inventory Management Form View -->
+        <record id="view_inventory_mgmt_form" model="ir.ui.view">
+            <field name="name">inventory.management.form</field>
+            <field name="model">inventory.management</field>
+            <field name="arch" type="xml">
+                <form string="Inventory Management">
+                    <sheet>
+                        <group>
+                            <field name="product_id"/>
+                            <field name="stock_level"/>
+                            <field name="sales"/>
+                            <field name="returns"/>
+                            <field name="cancellations"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Inventory Management Tree View -->
+        <record id="view_inventory_mgmt_tree" model="ir.ui.view">
+            <field name="name">inventory.management.tree</field>
+            <field name="model">inventory.management</field>
+            <field name="arch" type="xml">
+                <tree string="Inventory Management">
+                    <field name="product_id"/>
+                    <field name="stock_level"/>
+                    <field name="sales"/>
+                    <field name="returns"/>
+                    <field name="cancellations"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Inventory Management Action -->
+        <record id="action_inventory_mgmt" model="ir.actions.act_window">
+            <field name="name">Inventory Management</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">inventory.management</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_inventory_mgmt_tree"/>
+        </record>
+
+        <!-- Inventory Management Menu -->
+        <menuitem id="menu_inventory_mgmt" name="Inventory Management" parent="base.menu_inventory_root" action="action_inventory_mgmt" sequence="10"/>
+    </data>
+</odoo>
+```

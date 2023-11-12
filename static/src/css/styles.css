@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Product Configuration Styles */
+#product_config_form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#product_config_tree {
+    margin-top: 20px;
+}
+
+/* Inventory Management Styles */
+#inventory_mgmt_form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#inventory_mgmt_tree {
+    margin-top: 20px;
+}
+
+/* Pricing Engine Styles */
+#pricing_engine_form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#pricing_engine_tree {
+    margin-top: 20px;
+}
+
+/* Advanced Features Styles */
+#advanced_features_form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#advanced_features_tree {
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}

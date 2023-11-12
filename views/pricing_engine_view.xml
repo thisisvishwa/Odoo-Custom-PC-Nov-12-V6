@@ -1,0 +1,60 @@
+```xml
+<odoo>
+    <data>
+        <!-- Pricing Engine Form View -->
+        <record id="view_pricing_engine_form" model="ir.ui.view">
+            <field name="name">pricing.engine.form</field>
+            <field name="model">pricing.engine</field>
+            <field name="arch" type="xml">
+                <form string="Pricing Engine">
+                    <sheet>
+                        <group>
+                            <field name="base_cost"/>
+                            <field name="current_promotions"/>
+                            <field name="custom_configurations"/>
+                        </group>
+                        <group>
+                            <field name="price_calculation"/>
+                            <field name="promotional_adjustments"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Pricing Engine Tree View -->
+        <record id="view_pricing_engine_tree" model="ir.ui.view">
+            <field name="name">pricing.engine.tree</field>
+            <field name="model">pricing.engine</field>
+            <field name="arch" type="xml">
+                <tree string="Pricing Engine">
+                    <field name="base_cost"/>
+                    <field name="current_promotions"/>
+                    <field name="custom_configurations"/>
+                    <field name="price_calculation"/>
+                    <field name="promotional_adjustments"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Pricing Engine Action -->
+        <record id="action_pricing_engine" model="ir.actions.act_window">
+            <field name="name">Pricing Engine</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pricing.engine</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Pricing Engine
+                </p>
+                <p>
+                    Here, you can create and manage your pricing engines.
+                </p>
+            </field>
+        </record>
+
+        <!-- Pricing Engine Menu -->
+        <menuitem id="menu_pricing_engine" name="Pricing Engine" parent="base.menu_sales" sequence="5" action="action_pricing_engine"/>
+    </data>
+</odoo>
+```

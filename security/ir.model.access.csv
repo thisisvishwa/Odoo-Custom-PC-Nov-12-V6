@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_configuration,access_product_configuration,model_product_configuration,base.group_user,1,1,1,1
+access_inventory_management,access_inventory_management,model_inventory_management,base.group_user,1,1,1,1
+access_pricing_engine,access_pricing_engine,model_pricing_engine,base.group_user,1,1,1,1
+access_advanced_features,access_advanced_features,model_advanced_features,base.group_user,1,1,1,1
